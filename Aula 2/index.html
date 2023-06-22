@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2 de HTML</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <h2>Âncoras</h2>
+    <h3>Outro site:</h3>
+    <ul>
+        <li>
+            <a href="https://www.google.com.br/" target="_blank">Google</a>
+        </li>
+        <li>
+            <a href="http://soulcode.com" target="_blank">SoulCode</a>
+        </li>
+    </ul>
+    <h3>Dentro do site:</h3>
+    <ul>
+        <li>
+            <a href="#lista-compras">Lista de Compras</a>
+        </li>
+        <li>
+            <a href="#receita-bolo">Receita de Bolo</a>
+        </li>
+        <li>
+            <a href="#animais-vtbs">Animais Vertebrados</a>
+        </li>
+        <li>
+            <a href="#html-css">O que são HTML e CSS?</a>
+        </li>
+    </ul>
+    <hr>
+    <h1>Listas</h1>
+    <h2>Forma não semântica de fazer uma lista:</h2> 
+    <h3 id="lista-compras">Lista de Compras:</h3> 
+    >Arroz <br>
+    >Feijão <br>
+    >Farofa <br>
+    >Batata <br>
+    >Carne <br>
+    <hr>
+    <h2>Forma semântica de fazer listas:</h2>
+    <h3 id="receita-bolo">Receita de Bolo de Fubá</h3>
+    <h4>Ingredientes</h4>
+    (lista não ordenada)
+    <ul><!--Lista Não Ordenada-->
+        <li>3 ovos</li>
+        <li>2 xícaras (chá) de açúcar</li>
+        <li>2 xícaras (chá) de fubá</li>
+        <li>3 colheres (sopa) rasas de farinha de trigo</li>
+        <li>1/2 copo (americano) de óleo</li>
+        <li>1 copo de leite</li>
+        <li>1 colher (sopa) de fermento em pó</li>
+    </ul>
+    <h4>Modo de Preparo</h4>
+    (lista ordenada)
+    <ol><!--Lista Ordenada-->
+        <li>Bata todos os ingredientes no liquidificador.</li>
+        <li>Coloque em uma forma untada e enfarinhada.</li>
+        <li>Leve ao forno preaquecido e deixe assar, por cerca de 40 minutos.</li>
+    </ol>
+    <hr>
+    <h3 id="animais-vtbs">Animais Vertebrados:</h3>
+    (listas aninhadas)
+    <ol>
+        <li>Peixes:
+            <ul>
+                <li>Nemo</li>
+                <li>Atum</li>
+                <li>Salmão</li>
+            </ul>
+        </li>
+        <li>Répteis:
+            <ul>
+                <li>Tartaruga</li>
+                <li>Jacaré</li>
+                <li>Aligator</li>
+            </ul>
+        </li>
+        <li>Anfíbios:
+            <ul>
+                <li>Sapo</li>
+                <li>Rã</li>
+                <li>Perereca</li>
+            </ul>
+        </li>
+        <li>Aves:
+            <ul>
+                <li>Galinha</li>
+                <li>Águia</li>
+                <li>Avestruz</li>
+            </ul>
+        </li>
+        <li>Mamíferos:
+            <ul>
+                <li>Leão</li>
+                <li>Cachorro</li>
+                <li>Elefante</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <!--<dl> -> Lista de Descrição -->
+    <!--<dt> -> Item da lista de descrição-->
+    <!--<dd> -> Descrição do item -->
+        <h3 id="html-css">O que são HTML e CSS?</h3>
+        (Lista de descrição)
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML é uma linguagem de marcação aplicada 
+            para construção estrutural de uma página web.</dd>
+            <dt>CSS</dt>
+            <dd>CSS é uma linguagem de estilização aplicada
+            para estilizar os elementos de uma página HTML.</dd>
+        </dl>
+</body>
+</html>
