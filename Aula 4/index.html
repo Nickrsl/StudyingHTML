@@ -11,11 +11,13 @@
         Nome: 
         <input type="text" name="nome"> <br> <br>
         Idade:
-        <input type="number" name="idade"> <br><br>
+        <input type="number" name="idade" min="0" max="150"> <br><br>
         Data de nascimento:
-        <input type="date" name="nascimento"> <br><br>
+        <input type="date" name="nascimento" min="1930-12-31" max="2005-12-31"> <br><br>
         Telefone:
         <input type="tel" name="telefone"> <br> <br>
+        CPF:
+        <input type="text" name="cpf" pattern="[0-9]{10,15}"><br><br>
         Estado:
         <select name="estado">
             <option disabled selected>Selecione um Estado</option>
@@ -40,7 +42,7 @@
         Email: 
         <input type="email" name="email"> <br> <br>
         Senha: 
-        <input type="password" name="senha"> <br> <br>
+        <input type="password" name="senha" minlength="8"> <br> <br>
         Aceito os termos de uso:
         <input type="checkbox" name="termos"><br><br>
         <button>Enviar</button> 
