@@ -6,12 +6,43 @@
 </head>
 <body>
     <form action="">
+        Horário de Registro:
+        <input type="time" name="horario" value="15:00"><br><br>
         Nome: 
-        <input type="text"> <br> <br>
+        <input type="text" name="nome"> <br> <br>
+        Idade:
+        <input type="number" name="idade"> <br><br>
+        Data de nascimento:
+        <input type="date" name="nascimento"> <br><br>
+        Telefone:
+        <input type="tel" name="telefone"> <br> <br>
+        Estado:
+        <select name="estado">
+            <option disabled selected>Selecione um Estado</option>
+            <option value="São Paulo">SP</option>
+            <option value="Rio de Janeiro">RJ</option>
+            <option value="Ceará">CE</option>
+            <option value="Paraná">PR</option>
+        </select><br><br>
+        Estado civil: <br>
+        Solteiro <input type="radio" name="estado-civil" value="solteiro"><br>
+        Casado <input type="radio" name="estado-civil" value="casado"><br><br>
+        Nível de inglês:
+        1<input type="range" min="1" max="6" step="1" name="eng">6 <br><br>
+        Fale um pouco sobre você: <br>
+        <textarea cols="30" rows="3" placeholder="Digite aqui sua descrição" name="descrição"></textarea><br><br>
+        Foto do RG:
+        <input type="file" name="rg"> <br><br>
+        Url da foto de perfil:
+        <input type="url" name="foto"> <br> <br>
+        Qual é sua cor favorita?
+        <input type="color" name="cor"> <br> <br>
         Email: 
-        <input type="email"> <br> <br>
+        <input type="email" name="email"> <br> <br>
         Senha: 
-        <input type="password"> <br> <br>
+        <input type="password" name="senha"> <br> <br>
+        Aceito os termos de uso:
+        <input type="checkbox" name="termos"><br><br>
         <button>Enviar</button> 
     </form>
 </body>
