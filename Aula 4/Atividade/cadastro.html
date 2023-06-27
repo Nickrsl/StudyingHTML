@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+        
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" id="nome" maxlength="200" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" pattern="[0-9]{8,16}" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informações de Endereço</legend>
+        <label for="uf">UF:</label>
+        <select name="uf" id="uf" required>
+            <option disabled selected>Selecione um Estado</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="CE">CE</option>
+            <option value="PR">PR</option>
+            <option value="BH">BH</option>
+            <option value="RS">RS</option>
+            <option value="RN">RN</option>
+        </select><br><br>
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" required><br><br>
+        
+        <label for="rua">Rua:</label>
+        <input type="text" name="rua" id="rua" required><br><br>
+        
+        <label for="num">Número:</label>
+        <input type="text" name="num" id="num" required><br><br>
+        
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" required><br><br>
+        
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" cols="30" rows="5" placeholder="Diga mais sobre você" required></textarea><br><br>
+        
+        <label for="">Área de atuação:</label>
+        <input list="atuação" />
+        <datalist id="atuação">
+            <option value="Fullstack">
+            <option value="Cloud">
+            <option value="Ambos">
+            <option value="Outro">
+        </datalist>
+        </fieldset>
+        <button type="reset">Limpar</button>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
